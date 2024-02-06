@@ -1,6 +1,7 @@
 package lolesportsapikt.dtos
-
+import kotlinx.serialization.Serializable
+@Serializable
 enum class TeamStatus(val status: String) {
-    ARCHIVED("archived"),
-    ACTIVE("active")
+    archived("archived"),
+    active("active")
 }

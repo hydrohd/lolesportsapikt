@@ -4,5 +4,6 @@ import kotlinx.serialization.Serializable
 
 @Serializable
 data class League(
-    val id: String,
+    val name: String,
+    val region: String
 )
