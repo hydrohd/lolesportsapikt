@@ -1,7 +1,7 @@
 package lolesportsapikt.dtos
 
 import kotlinx.serialization.Serializable
-
+//test
 @Serializable
 data class Team(
     val alternativeImage: String,   // An alternative image for the team, usually some silhouette of OG logo
