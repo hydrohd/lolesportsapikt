@@ -1,25 +1,26 @@
 plugins {
-    `java-library`
+    java
     kotlin("jvm") version "1.9.21"
     kotlin("plugin.serialization") version "1.9.21"
     `maven-publish`
 }
 
 group = "com.github.hydrohd"
-version = "master-SNAPSHOT"
+version = "1.0.2"
 
 publishing {
     publications{
-        create<MavenPublication>("lolesportsapikt"){
+        create<MavenPublication>("maven"){
             groupId = "com.github.hydrohd"
             artifactId = project.name
+
             from(components["java"])
         }
     }
 }
 repositories {
     mavenCentral()
-    maven("https://jitpack.io")
+
 }
 
 val ktorVersion: String by project
@@ -43,3 +44,4 @@ tasks.test {
 kotlin {
     jvmToolchain(21)
 }
+
