@@ -11,7 +11,7 @@ version = "master-SNAPSHOT"
 publishing {
     publications{
         create<MavenPublication>("lolesportsapikt"){
-            groupId = project.group.toString()
+            groupId = "com.github.hydrohd.lolesportsapikt"
             artifactId = project.name
             from(components["java"])
         }
