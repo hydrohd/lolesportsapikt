@@ -1,11 +1,11 @@
 plugins {
+    `java-library`
     kotlin("jvm") version "1.9.21"
     kotlin("plugin.serialization") version "1.9.21"
-    `java-library`
     `maven-publish`
 }
 
-group = "com.github.hydrohd"
+group = "com.github.hydrohd.lolesportsapikt"
 version = "master-SNAPSHOT"
 
 publishing {
