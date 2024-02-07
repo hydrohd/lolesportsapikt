@@ -6,7 +6,7 @@ plugins {
 }
 
 group = "com.github.hydrohd"
-version = "1.0-SNAPSHOT"
+version = "master-SNAPSHOT"
 
 publishing {
     publications{
