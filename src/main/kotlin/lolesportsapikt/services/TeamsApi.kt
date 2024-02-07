@@ -5,7 +5,7 @@ import io.ktor.client.request.*
 import lolesportsapikt.dtos.Team
 import lolesportsapikt.dtos.TeamsResponse
 
-class TeamsApi(val client: HttpClient) {
+class TeamsApi(private val client: HttpClient) {
     suspend fun getTeam(teamId: String): Team?{
 
         val teamsResponse: TeamsResponse = client.get("getTeams"){

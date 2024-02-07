@@ -6,7 +6,7 @@ import io.ktor.client.request.*
 import lolesportsapikt.dtos.League
 import lolesportsapikt.dtos.LeaguesResponse
 
-class LeaguesApi(val client: HttpClient) {
+class LeaguesApi(private val client: HttpClient) {
 
     suspend fun getAllLeagues(): List<League>{
         val leaguesResponse: LeaguesResponse = client.get("getLeagues").body()

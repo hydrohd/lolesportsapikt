@@ -6,7 +6,7 @@ import io.ktor.client.request.*
 import lolesportsapikt.dtos.Event
 import lolesportsapikt.dtos.ScheduleResponse
 
-class ScheduleApi(val client: HttpClient) {
+class ScheduleApi(private val client: HttpClient) {
 
     suspend fun getSchedule(leagueId: String): List<Event>?{
         val scheduleResponse: ScheduleResponse = client.get("getSchedule"){

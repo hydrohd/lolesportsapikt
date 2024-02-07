@@ -11,7 +11,9 @@ data class Match(
     @SerialName("id")
     val id: String,
     @SerialName("strategy")
-    val strategy: Strategy,
+    val strategy: Strategy? = null,
     @SerialName("teams")
-    val teams: List<Team>
+    val teams: List<Team>,
+    @SerialName("state")
+    val state: String? = null
 )
